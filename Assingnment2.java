@@ -3,13 +3,20 @@ import java.util.Scanner;
 public class Assingnment2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a year: ");
-        int year = sc.nextInt();
+        int randomNum = 33;
+        System.out.print("Guess a number: ");
+        int userNum = sc.nextInt();
 
-        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
-            System.out.println(year + " is leap year");
-        }else {
-            System.out.println(year + " is not a leap year");
+        for(int i=0; i<=5; i++ ){
+            if ( i != 5) {
+                if (userNum == randomNum) {
+                    System.out.println("Congragulation!, Your guess is correct");
+                }else {
+                    System.out.println("Guess once again: ");
+                }
+            }else {
+                System.out.println("You attempted all your 5 attempt");
+            }
         }
     }
 }

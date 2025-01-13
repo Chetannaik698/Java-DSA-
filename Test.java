@@ -1,13 +1,9 @@
 public class Test {
     public static void main(String args[]){
-          byte b = 4;
-          char c = 'a';
-          short s = 512;
-          int i = 1000;
-          float f = 3.14f;
-          double d = 99.9954;
-
-          double result = ( f * b) + (i % c) - (d * s);
-          System.out.println(result);
+        int i = 0;
+         for(i=0; i<=5; i++){
+            System.out.println("i =" + i);
+         }
+         System.out.println("i after the loop" + i);
     }
 }
